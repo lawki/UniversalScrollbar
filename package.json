@@ -1,0 +1,12 @@
+{
+  "name": "universalscrollbar",
+  "version": "1.0.0",
+  "description": "A browser scrollbar that does not depend on your OS",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass src/style.scss dist/style.min.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

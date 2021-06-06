@@ -1,0 +1,29 @@
+$scrollbar-width: 10px;
+$scrollbar-thumb-color: #777;
+$scrollbar-thumb-color-hover: #444;
+
+/* width */
+::-webkit-scrollbar {
+  width: $scrollbar-width;
+  height: $scrollbar-width;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px inherit;
+  border: 3px solid transparent;
+  // border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $scrollbar-thumb-color; 
+  border-radius: 0.5rem;
+  margin-right: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $scrollbar-thumb-color-hover; 
+}
