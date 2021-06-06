@@ -11,7 +11,7 @@
       ],
       "run_at": "document_start",
       "css": [
-        "style.min.css"
+        "dist/style.min.css"
       ]
     }
   ]
