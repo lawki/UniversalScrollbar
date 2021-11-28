@@ -1,29 +1,37 @@
-$scrollbar-width: 10px;
-$scrollbar-thumb-color: #777;
-$scrollbar-thumb-color-hover: #444;
-
-/* width */
+$scrollbar-width: 8px;
+$scrollbar-height: $scrollbar-width;
+$scrollbar-thumb-color: #444;
+$scrollbar-thumb-color-hover: #000;
 ::-webkit-scrollbar {
+  height: $scrollbar-height;
+  overflow: visible;
   width: $scrollbar-width;
-  height: $scrollbar-width;
 }
+::-webkit-scrollbar-thumb{
+  background-color: $scrollbar-thumb-color;
+  background-clip: padding-box;
+  border: solid transparent;
+  min-height: 28px;
+  padding: 100px 0 0;
+  box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
+  border-width: 2px 2px 2px 2px;
+  border-radius: 8px;
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px inherit;
-  border: 3px solid transparent;
-  // border-radius: 10px;
+  &:hover {
+    background-color: $scrollbar-thumb-color-hover;
+  }
 }
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: $scrollbar-thumb-color; 
-  // border-radius: 0.5rem;
-  margin-right: 0.1rem;
-  margin-bottom: 0.1rem;
+::-webkit-scrollbar-button{
+  height: 0;
+  width: 0;
 }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: $scrollbar-thumb-color-hover; 
+::-webkit-scrollbar-track{
+  background-clip: padding-box;
+  border: solid transparent;
+  border-width: 4px;
+  height: $scrollbar-height;
+  width: $scrollbar-width;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }

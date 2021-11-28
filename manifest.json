@@ -9,9 +9,12 @@
       "matches": [
         "\u003Call_urls\u003E"
       ],
-      "run_at": "document_start",
+      "run_at": "document_idle",
       "css": [
-        "dist/style.min.css"
+        "dist/main.css"
+      ],
+      "js": [
+        "dist/bundle.js"
       ]
     }
   ]
