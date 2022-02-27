@@ -1,7 +1,7 @@
-$scrollbar-width: 8px;
+$scrollbar-width: 1rem;
 $scrollbar-height: $scrollbar-width;
-$scrollbar-thumb-color: #444;
-$scrollbar-thumb-color-hover: #000;
+$scrollbar-thumb-color: #666;
+$scrollbar-thumb-color-hover: #444;
 ::-webkit-scrollbar {
   height: $scrollbar-height;
   overflow: visible;
@@ -15,7 +15,7 @@ $scrollbar-thumb-color-hover: #000;
   padding: 100px 0 0;
   box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
   border-width: 2px 2px 2px 2px;
-  border-radius: 8px;
+  border-radius: 1rem;
 
   &:hover {
     background-color: $scrollbar-thumb-color-hover;
