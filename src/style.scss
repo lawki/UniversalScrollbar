@@ -1,4 +1,4 @@
-$scrollbar-width: 1rem;
+$scrollbar-width: 0.5rem;
 $scrollbar-height: $scrollbar-width;
 $scrollbar-thumb-color: #666;
 $scrollbar-thumb-color-hover: #444;
@@ -11,11 +11,11 @@ $scrollbar-thumb-color-hover: #444;
   background-color: $scrollbar-thumb-color;
   background-clip: padding-box;
   border: solid transparent;
-  min-height: 28px;
-  padding: 100px 0 0;
+  // min-height: 28px;
+  // padding: 100px 0 0;
   box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
-  border-width: 2px 2px 2px 2px;
-  border-radius: 1rem;
+  border-width: 1px 1px 1px 1px;
+  // border-radius: 1rem;
 
   &:hover {
     background-color: $scrollbar-thumb-color-hover;
